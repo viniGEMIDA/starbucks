@@ -1,0 +1,59 @@
+/* Importando a font a Pooppins (Google Fontes) */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+  /* ____________________________________ */
+  /* Reset (Básico) */
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'; sans-serif;
+  }
+
+  html{
+    /* Varíaveis em CSS */
+
+    --corPrimaria: #017143;
+
+    --corSecundaria: #333;
+
+    --corTerciaria: #fff;
+  }
+
+  /* ________________________________ */
+  /* Main */
+
+  main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--corTerciaria);
+  }
+
+   /* ________________________________ */
+   /* Header */
+
+   header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   header .logo:hover{
+    filter: invert(0.1); /* Controla o nível de contraste*/
+    }
+
+    header ul{
+        position: relative;
+        display: flex;/* Põe os links em linha (Menu)*/
+    }
