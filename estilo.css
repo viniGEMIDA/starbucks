@@ -176,3 +176,71 @@
     .sorvetes li img {
       max-width: 60px;
     }
+
+    /* Imagem das redes sociais */
+
+    .sociais{
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .sociais li {
+      list-style: none;
+    }
+
+    .sociais li a {
+      display: inline-block;
+      margin: 5px 0;
+      transform: scale(0.6);
+      filter: invert(1);
+    }
+
+    .sociais li a:hover {
+      /* color: #333; */
+      color: var(--corSecundaria)
+      filter: invert(0);
+    }
+
+    /* _____________________________________ */
+    /* Círculo */
+
+    .circulo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* background: #017143 */
+      background: var(--corPrimaria);
+
+      /* https://bennetfeely.com/clippy/ */
+      /* htpps://www.w3schools.com/cssref/css3_pr_clip-path.php */
+
+      /* Tamanho -> Lado -> posição */
+      clip-path: circle(600px at right 800px);
+    }
+
+    /* _____________________________________ */
+    /* Responsividade */
+
+    /* https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* Large devices (laptops/desktops, 1200px and up)*/
+    /* Extra large devices (large laptops and desktops, 1200px and up)*/
+
+    /* Abaixo de 992px */
+    @media (max-width: 992px) {
+
+      header {
+        padding: 20px;
+      }
+      
+    }
